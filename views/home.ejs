@@ -1,0 +1,39 @@
+<%- include('includes/head.ejs') %>
+
+</head>
+
+<body>
+    <header class="main-header">
+        <%- include('includes/navigation.ejs') %>
+    </header>
+    <main>
+        
+        <div class="container">
+            <div class="grid">
+                <h1 class="center page-title">GUARDIANS ON WATCH</h1>
+
+                <h3 class="center page-subtitle">Citizens, sleep tight knowing we're onto the bad guys !?@#</h3>
+            
+                <div class="row col-full" id="superheroes">
+                    <div class="col-md-4"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/SupermanRoss.png/250px-SupermanRoss.png" alt="Superman"></div>
+                    <div class="col-md-4"><img src="https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png" alt="Batman"></div>
+                    <div class="col-md-4"><img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/c/ca/Deadpool.png/revision/latest?cb=20150609014505" alt="Iron Man"></div>
+                </div>
+                <div class="row col-full" id="hero-names">
+                    <div class="col-md-4"><h1 class="center">Superman</h1></div>
+                    <div class="col-md-4"><h1 class="center">Batman</h1></div>
+                    <div class="col-md-4"><h1 class="center">Dead Pool</h1></div>
+                </div>
+
+                <div class="row col-full" id="report-banner">
+                    <div class="col-md-12">
+                        <p class="banner-text">Report a new villain now!</p>
+                        <a href="/admin/report-villain" class="btn banner-btn">Report!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+<%- include('includes/end.ejs') %>

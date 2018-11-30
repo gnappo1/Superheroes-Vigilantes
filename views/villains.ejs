@@ -1,0 +1,44 @@
+<%- include('includes/head.ejs') %>
+<link rel="stylesheet" href="/css/item.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <%- include('includes/navigation.ejs') %>
+    </header>
+
+    <main>
+        <% if (villy.length > 0) { %>
+            <div class="container villains">
+                <div class="grid villains">
+                    <% for (let villain of villy) { %>
+                        <article class="card villain-item">
+                            <header class="card__header">
+                                <h1 class="villain__title"><%= villain.name %></h1>
+                            </header>
+                            <div class="card__image">
+                                <img src='<%= villain.imageUrl %>'
+                                    alt="<%= villain.name %>">
+                            </div>
+                            <div class="card__content">
+                                <h2 class="villain__price"><%= villain.reward %></h2>
+                                <p class="villain__description">MOST WANTED!</p>
+                            </div>
+                            <div class="card__actions">
+                                <button class="btn">Remove</button>
+                            </div>
+                        </article>
+                    <% } %>
+                </div>
+            </div>
+        <% } else { %>
+            <div class="container-no-villains">
+                <div class="grid">
+                    <h1 class="center">No Villains Found!  It looks like we did a good job.</h1> 
+                    <span class="cool-icon"></span>
+                </div>
+            </div>
+        <% } %>
+    </main>
+
+<%- include('includes/end.ejs') %>

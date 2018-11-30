@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+.red {
+  color: #bf151b;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  padding: 1rem;
+  margin: auto;
+  background-image: url("https://media.istockphoto.com/vectors/super-heroes-funny-wacky-doodle-set-2-color-drawing-vector-texture-vector-id1029697432?k=6&m=1029697432&s=612x612&w=0&h=W_sfVRXYVQkv6am6iOKvjvp6wclM1ZdJ9UBIKoMpU7s=");
+}
+
+.main-header {
+  width: 100%;
+  height: 3.5rem;
+  background-color: hsl(226, 64%, 47%);
+  padding: 0 1.5rem;
+}
+
+.main-header__nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-header__item {
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.main-header__item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-header__item a:hover,
+.main-header__item a:active,
+.main-header__item a.active {
+  color: yellow;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.card__header,
+.card__content {
+  padding: 1rem;
+}
+
+.card__header h1,
+.card__content h1,
+.card__content h2,
+.card__content p {
+  margin: 0;
+}
+
+.card__image {
+  width: 100%;
+  height: 17rem;
+}
+
+.card__image img {
+  width: 100%;
+  height: 17rem;
+}
+
+.card__actions {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card__actions button,
+.card__actions a {
+    margin: 0 0.25rem;
+}
+
+.btn {
+  font: inherit;
+  border: 2px solid #bf151b;  
+  color: white;
+  background-image: linear-gradient(to bottom right, #ed1c24, #bf151b);
+  border-radius: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: .1em;
+  display: inline-block;
+  text-decoration: blink;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #00695c;
+  color: white;
+}
+
+.col-md-2 {
+  width: 16.666%;
+}
+
+.col-md-4 {
+  width: 33%;
+  display:inline-block;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.col-md-8 {
+  width: 66.666%;
+}
+
+.col-md-10 {
+  width: 83.333%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.row > col {
+  display: inline;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.container {
+  border: 3px solid blue;
+  padding: 2px 3px;
+  width: 60%;
+  margin: 5% 20% 5%;
+  background-color: white;
+}
+
+.container.villains {
+  margin: 5% 10% 100% 10%;
+  width: 80%;
+}
+
+.grid {
+  border: 3px solid #ed1c24;
+  background: yellow;
+}
+
+.col-md-4 > img {
+  height: 500px;
+  width: auto;
+}
+
+#report-banner {
+  width: 80%;
+  background: #fff;
+  border: 2px #000 solid;
+  margin: 2rem 1rem;
+}
+
+.banner-text {
+  float: left;
+  width: max-content;
+  font-size: x-large;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 1em;
+}
+
+.banner-btn {
+  margin: 1.7rem 2.5rem;
+  width: 20%;
+  height: 1.8rem;
+  padding: .1rem 0;
+  text-align: -webkit-center;
+}
+
+h1.page-title {
+  font-family: 'Bangers', cursive;
+  font-size: 4rem;
+  letter-spacing: .3rem;
+  background: -webkit-radial-gradient(circle, #ed1c24, #bf151b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.page-subtitle {
+  font-family: 'Bangers', cursive;
+  margin: 0 2rem 2rem ;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+  font-weight: bold;
+}
+
+.cool-icon::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 6em;
+  font-style: normal;
+  font-variant: normal;
+  display: block;
+  content: "\f259";
+  -webkit-animation: fa-spin 4s infinite linear;
+  animation: fa-spin 4s infinite cubic-bezier(.98, 0,.02,1);
+}
+
+#hero-names > h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#superheroes > .col-md-4 {
+  width: 31%;
+}
+
+#hero-names > .col-md-4 {
+  width: 32%;
+}
+
+.container-no-villains {
+  font-family: 'Bangers', cursive;
+  border: 3px solid blue;
+  padding: 2px 3px;
+  width: 60%;
+  margin: 5% 20% 100%;
+  background-color: white;
+}
+
+.container-no-villains h1 {
+  margin-top: 2em;
+  width: -webkit-fill-available;
+  letter-spacing: .08em;
+}
+
+.heroform-title {
+  font-size: 3rem;
+}
+
+.btn.submit {
+  display: block;
+  width: 10rem;
+  height: 2.3rem;
+  letter-spacing: .2rem;
+  font-size: 2em;
+  margin-top: .4em;
+  margin-bottom: 2em;
+}

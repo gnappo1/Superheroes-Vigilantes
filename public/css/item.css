@@ -1,0 +1,43 @@
+.villain-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+}
+
+.villain__title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.villain__price {
+    text-align: center;
+    color: #4d4d4d;
+    margin-bottom: 0.5rem;
+}
+
+.villain__description {
+    text-align: center;
+}
+
+.grid.villains {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.grid.villains > article {
+    flex-grow: 1;
+    flex: 1 1 30%;
+    height: min-content;
+    background-color: white;
+    margin-bottom: 1em;
+    max-width: 40%;
+}
+.grid.villains > article:nth-child(3n+1) {
+    margin-right: 1em;
+}
+
+.grid.villains > article:nth-child(3n+3) {
+    margin-left: 1em;
+}
