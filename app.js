@@ -6,16 +6,17 @@ const app = express();
 
 const villainRoutes = require('./routes/villains');
 const superHeroRoutes = require('./routes/super-heroes');
+const adminController = require('./controllers/adminController');
 
 app.set('view engine', 'ejs');
+app.set('views', 'views');
+
 app.use(bodyParser.urlencoded({"extended": false}));
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use('/admin', superHeroRoutes.routes);
+app.use('/admin', superHeroRoutes);
 app.use(villainRoutes);
 
-app.use((req, res) => {
-    res.status(404).render('404', {pageTitle: 'Page Not Found!'});
-});
+app.use(adminController.get404);
 
 app.listen(3000);

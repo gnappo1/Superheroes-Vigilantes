@@ -171,7 +171,7 @@ h3 {
 }
 
 .container.villains {
-  margin: 5% 10% 100% 10%;
+  margin: 5% 10% 30% 10%;
   width: 80%;
 }
 
@@ -252,12 +252,12 @@ h1.page-title {
   width: 32%;
 }
 
-.container-no-villains {
+.container-no-villains {  
   font-family: 'Bangers', cursive;
   border: 3px solid blue;
   padding: 2px 3px;
   width: 60%;
-  margin: 5% 20% 100%;
+  margin: 5% 20% 30%;
   background-color: white;
 }
 
